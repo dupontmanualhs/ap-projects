@@ -13,7 +13,7 @@ public class Date {
         this.year = Date.yearGivenDaysSince(1900, daysSince1900);
         int dayOfYear;
         if (this.year > 1900) {
-            Date dec31 = new Date(this.year, 12, 31);
+            Date dec31 = new Date(this.year - 1, 12, 31);
             dayOfYear = daysSince1900 - dec31.daysSince1900();
         } else {
         	dayOfYear = daysSince1900;
