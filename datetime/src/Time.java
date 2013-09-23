@@ -21,7 +21,7 @@ public class Time {
     
     public String toString() {
         return this.hourString() + ":" + Time.maybeAddZero(this.minute) + ":" 
-            + Time.maybeAddZero(this.second) + this.amOrPm(); 
+            + Time.maybeAddZero(this.second) + " " + this.amOrPm(); 
     }
     
     public String hourString() {

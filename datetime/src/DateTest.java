@@ -17,6 +17,15 @@ public class DateTest {
         assertEquals(d4.toString(), new Date(d4.daysSince1900()).toString());
         assertEquals(d5.toString(), new Date(d5.daysSince1900()).toString());
     }
+    
+    @Test
+    public void testDaysSince1900() {
+    	assertEquals(1, d1.daysSince1900());
+    	assertEquals((365 * 4) + 31 + 29 + 17, d2.daysSince1900());
+    	assertEquals((113 * 365) + 28 + 31 + 28 + 31 + 30 + 31 + 30 + 31 + 24, d3.daysSince1900());
+    	assertEquals((100 * 365) + 24 + 31 + 12, d4.daysSince1900());
+    	assertEquals((85 * 365) + 21, d5.daysSince1900());
+    }
 
     @Test
     public void testIsLeapYear() {

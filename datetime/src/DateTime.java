@@ -12,9 +12,20 @@ public class DateTime {
         this.time = new Time((int) (secondsSince1900 % (24 * 60 * 60)));
     }
     
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     public long secondsSince1900() {
-    	return this.date.daysSince1900() * (24 * 60 * 60) + this.time.secondsSinceMidnight();
+    	return this.date.daysSince1900() * (24L * 60 * 60) + this.time.secondsSinceMidnight();
     }
     
     public String toString() {
