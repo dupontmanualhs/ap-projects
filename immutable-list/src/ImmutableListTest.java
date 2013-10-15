@@ -143,5 +143,23 @@ public class ImmutableListTest {
 		assertEquals("[a, b]", three.remove(2).toString());
 		assertEquals("[b]", three.remove(2).remove(0).toString());
 	}
+	
+	@Test
+	public void testContains() {
+		assertFalse(empty.contains("anything"));
+		assertTrue(three.contains("a"));
+		assertTrue(three.contains("b"));
+		assertTrue(three.contains("c"));
+		assertFalse(three.contains("d"));
+	}
+	
+	@Test
+	public void testIndexOf() {
+		assertEquals(-1, empty.indexOf("whatever"));
+		assertEquals(0, three.indexOf("a"));
+		assertEquals(1, three.indexOf("b"));
+		assertEquals(2, three.indexOf("c"));
+		assertEquals(-1, three.indexOf("anything else"));
+	}
 
 }

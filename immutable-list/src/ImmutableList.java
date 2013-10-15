@@ -10,4 +10,6 @@ public interface ImmutableList<T> {
 	
 	ImmutableList<T> set(int index, T obj);
 	ImmutableList<T> remove(int index);
+	boolean contains(T obj);
+	int indexOf(T obj);
 }

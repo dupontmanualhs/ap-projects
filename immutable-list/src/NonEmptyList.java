@@ -56,6 +56,23 @@ public class NonEmptyList<T> implements ImmutableList<T> {
 		}
 	}
 	
+	public boolean contains(T obj) {
+		return this.first.equals(obj) || this.rest.contains(obj);
+	}
+	
+	public int indexOf(T obj) {
+		if (this.first.equals(obj)) {
+			return 0;
+		} else {
+			int indexOfRest = this.rest.indexOf(obj);
+			if (indexOfRest == -1) {
+				return -1;
+			} else {
+				return indexOfRest + 1;
+			}
+		}
+	}
+	
 	private String elems() {
 		if (this.rest.isEmpty()) {
 			return "" + this.first;

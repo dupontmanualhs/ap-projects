@@ -36,6 +36,14 @@ public class EmptyList<T> implements ImmutableList<T> {
 		throw new IndexOutOfBoundsException("can't call remove() on EmptyList");
 	}
 	
+	public boolean contains(T obj) {
+		return false;
+	}
+	
+	public int indexOf(T obj) {
+		return -1;
+	}
+	
 	public String toString() {
 		return "[]";
 	}
