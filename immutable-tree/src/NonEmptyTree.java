@@ -78,4 +78,27 @@ public class NonEmptyTree<T extends Comparable<T>> implements ImmutableTree<T> {
 	public String postOrder() {
 		return this.left.postOrder() + this.right.postOrder() + this.data + " ";
 	}
+	
+	public String toDot() {
+		return "digraph BST {\n" + this.toDotAux("") + "}\n";
+	}
+	
+	public String toDotAux(String me) {
+		String node;
+		if (me.equals("")) {
+			node = "    root [label=\"" + this.data + "\"];";
+		} else {
+			String parent;
+			if (me.length() == 1) {
+				parent = "root";
+			} else {
+				parent = me.substring(1);
+			}
+			node = "    " + me + " [label=\"" + this.data + "\"];\n" +
+		           "    " + parent + " -> " + me + ";\n";
+		}
+		String leftSubtree = this.left.toDotAux("0" + me);
+		String rightSubtree = this.right.toDotAux("1" + me);
+		return node + leftSubtree + rightSubtree;
+	}
 }
