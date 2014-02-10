@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=a\ b
+comment0.target=int\ gcd(int,\ int)
+comment1.params=n
+comment1.target=long\ factorial(int)
+comment2.params=n
+comment2.target=double\ piSeries(int)
+comment3.params=n
+comment3.target=double\ piRandom(int)
+comment4.params=n
+comment4.target=double\ eSeries(int)
+comment5.params=
+comment5.target=int\ addToOne()
+comment6.params=n
+comment6.target=double\ eRandom(int)
+numComments=7
