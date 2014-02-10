@@ -43,4 +43,13 @@ public class EmptyTree<T extends Comparable<T>> implements ImmutableTree<T> {
 	public String postOrder() {
 		return "";
 	}
+	
+	public String toDot() {
+		return "digraph BST {\n    node [shape=point];\n}\n";
+	}
+	
+	public String toDotAux(String me) {
+		String parent = me.substring(1);
+		return "    " + me + " [shape=point];\n" + "    " + parent + " -> " + me + ";\n";
+	}
 }

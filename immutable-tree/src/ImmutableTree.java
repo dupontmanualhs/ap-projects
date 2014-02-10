@@ -14,4 +14,7 @@ public interface ImmutableTree<T extends Comparable<T>> {
 	String preOrder();
 	String inOrder();
 	String postOrder();
+	
+	String toDot();
+	String toDotAux(String code);
 }
