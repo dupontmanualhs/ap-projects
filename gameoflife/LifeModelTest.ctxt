@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=path
+comment0.target=java.lang.String\ readFile(java.lang.String)
+comment1.params=
+comment1.target=void\ stillLifes()
+comment2.params=
+comment2.target=void\ setUp()
+comment2.text=\n\ Sets\ up\ the\ test\ fixture.\n\n\ Called\ before\ every\ test\ case\ method.\n
+comment3.params=
+comment3.target=void\ tearDown()
+comment3.text=\n\ Tears\ down\ the\ test\ fixture.\n\n\ Called\ after\ every\ test\ case\ method.\n
+numComments=4

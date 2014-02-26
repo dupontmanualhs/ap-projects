@@ -24,6 +24,7 @@ public class LifeModel implements ILifeModel {
         this.cols = cols;
         this.cellSize = cellSize;
         this.board = new boolean[this.rows][this.cols];
+        this.isScreenWrapped = false;
     }
     
     /**
@@ -93,7 +94,7 @@ public class LifeModel implements ILifeModel {
     
     private int normalize(int value, int max) {
         if (value < 0 && this.isScreenWrapped) {
-            return max - value;
+            return max + value;
         } else if (value >= max && this.isScreenWrapped) {
             return value - max;
         } else {
@@ -162,6 +163,14 @@ public class LifeModel implements ILifeModel {
      * for each of the r's and c's
      */
     public void printToFile(PrintStream out) {
+        out.println(this.rows + " " + this.cols + " " + this.cellSize);
+        for (int r = 0; r < this.rows; r++) {
+            for (int c = 0; c < this.cols; c++) {
+                if (this.board[r][c]) {
+                    out.println(r + " " + c);
+                }
+            }
+        }
         
     }
 
@@ -170,10 +179,22 @@ public class LifeModel implements ILifeModel {
      * sets the state of this model appropriately
      */
     public void readFromScanner(Scanner in) {
-        
+        int newRows = in.nextInt();
+        int newCols = in.nextInt();
+        int newCellSize = in.nextInt();
+        boolean[][] newBoard = new boolean[newRows][newCols];
+        while (in.hasNextInt()) {
+            int r = in.nextInt();
+            int c = in.nextInt();
+            newBoard[r][c] = true;
+        }
+        this.rows = newRows;
+        this.cols = newCols;
+        this.cellSize = newCellSize;
+        this.board = newBoard;
     }
     
     public static void main(String[] args) {
-        new LifeGUI(new LifeModel(25, 25, 20));
+        new LifeGUI(new LifeModel(50, 50, 10));
     }
 }
