@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=value
+comment0.target=org.dupontmanual.mtickle.Expression\ makeNumber(double)
+comment1.params=
+comment1.target=org.dupontmanual.mtickle.Expression\ makeVar()
+comment10.params=left\ right
+comment10.target=org.dupontmanual.mtickle.Expression\ makeDifference(org.dupontmanual.mtickle.Expression,\ org.dupontmanual.mtickle.Expression)
+comment2.params=expr
+comment2.target=org.dupontmanual.mtickle.Expression\ makeNeg(org.dupontmanual.mtickle.Expression)
+comment3.params=expr
+comment3.target=org.dupontmanual.mtickle.Expression\ makeSin(org.dupontmanual.mtickle.Expression)
+comment4.params=expr
+comment4.target=org.dupontmanual.mtickle.Expression\ makeCos(org.dupontmanual.mtickle.Expression)
+comment5.params=expr
+comment5.target=org.dupontmanual.mtickle.Expression\ makeLn(org.dupontmanual.mtickle.Expression)
+comment6.params=base\ power
+comment6.target=org.dupontmanual.mtickle.Expression\ makeExponentiation(org.dupontmanual.mtickle.Expression,\ org.dupontmanual.mtickle.Expression)
+comment7.params=left\ right
+comment7.target=org.dupontmanual.mtickle.Expression\ makeProduct(org.dupontmanual.mtickle.Expression,\ org.dupontmanual.mtickle.Expression)
+comment8.params=top\ bottom
+comment8.target=org.dupontmanual.mtickle.Expression\ makeQuotient(org.dupontmanual.mtickle.Expression,\ org.dupontmanual.mtickle.Expression)
+comment9.params=left\ right
+comment9.target=org.dupontmanual.mtickle.Expression\ makeSum(org.dupontmanual.mtickle.Expression,\ org.dupontmanual.mtickle.Expression)
+numComments=11

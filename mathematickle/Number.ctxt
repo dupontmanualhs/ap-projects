@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=value
+comment0.target=Number(double)
+comment1.params=
+comment1.target=java.lang.String\ repr()
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=
+comment3.target=java.lang.String\ toSmartString()
+comment4.params=
+comment4.target=boolean\ containsVar()
+comment5.params=x
+comment5.target=double\ eval(double)
+comment6.params=
+comment6.target=org.dupontmanual.mtickle.Expression\ simplify()
+comment7.params=
+comment7.target=org.dupontmanual.mtickle.Expression\ derivative()
+comment8.params=
+comment8.target=int\ getPrecedence()
+numComments=9

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=list\ a\ b
+comment0.target=void\ swap(java.util.ArrayList,\ int,\ int)
+comment1.params=list
+comment1.target=void\ quick(java.util.ArrayList)
+comment2.params=list\ start\ end
+comment2.target=void\ quick(java.util.ArrayList,\ int,\ int)
+comment3.params=list
+comment3.target=void\ heap(java.util.ArrayList)
+comment4.params=list\ i
+comment4.target=void\ percolateUp(java.util.ArrayList,\ int)
+comment5.params=list\ elt\ size
+comment5.target=void\ percolateDown(java.util.ArrayList,\ int,\ int)
+comment6.params=list\ elt\ size
+comment6.target=int\ maxChild(java.util.ArrayList,\ int,\ int)
+numComments=7

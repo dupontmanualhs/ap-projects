@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=left\ right
+comment0.target=Sum(org.dupontmanual.mtickle.Expression,\ org.dupontmanual.mtickle.Expression)
+comment1.params=
+comment1.target=java.lang.String\ repr()
+comment10.params=
+comment10.target=int\ getPrecedence()
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=
+comment3.target=java.lang.String\ leftSmartString()
+comment4.params=
+comment4.target=java.lang.String\ rightSmartString()
+comment5.params=
+comment5.target=java.lang.String\ toSmartString()
+comment6.params=
+comment6.target=boolean\ containsVar()
+comment7.params=x
+comment7.target=double\ eval(double)
+comment8.params=
+comment8.target=org.dupontmanual.mtickle.Expression\ simplify()
+comment9.params=
+comment9.target=org.dupontmanual.mtickle.Expression\ derivative()
+numComments=11
